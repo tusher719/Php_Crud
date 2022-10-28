@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c2f61550-10ba-40b4-8d7f-1eeb98bad95b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectId" id="2GiXIdl6g1WZsimcPjHnDQYgkGd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../php/php.exe" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c2f61550-10ba-40b4-8d7f-1eeb98bad95b" name="Default Changelist" comment="" />
+      <created>1666872299487</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666872299487</updated>
+      <workItem from="1666872301485" duration="10337000" />
+      <workItem from="1666961960101" duration="9989000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="263" y="54" key="#CLI_Interpreters" timestamp="1666872908069">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="263" y="54" key="#CLI_Interpreters/0.30.1366.738@0.30.1366.738" timestamp="1666872908069" />
+    <state x="463" y="154" key="FileChooserDialogImpl" timestamp="1666872871495">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="463" y="154" key="FileChooserDialogImpl/0.30.1366.738@0.30.1366.738" timestamp="1666872871495" />
+    <state x="184" y="44" key="SettingsEditor" timestamp="1666872925189">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="184" y="44" key="SettingsEditor/0.30.1366.738@0.30.1366.738" timestamp="1666872925189" />
+    <state x="196" y="30" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1666971406933">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="196" y="30" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.30.1366.738@0.30.1366.738" timestamp="1666971406933" />
+  </component>
+</project>
