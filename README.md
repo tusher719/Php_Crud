@@ -2,10 +2,10 @@
 
 Php crud project preview images.
 
-![Screenshot (291)](https://user-images.githubusercontent.com/62649759/198702503-0394eabf-23b8-4bfc-a07a-b6ee428a01a9.png)
+![Screenshot_14](https://user-images.githubusercontent.com/62649759/198720582-8e369bac-de7e-4484-b77a-ac631b78387e.png)
 
-![Screenshot (292)](https://user-images.githubusercontent.com/62649759/198702579-052ff004-203a-4c0c-bc55-b82209e5e27b.png)
+![Screenshot_15](https://user-images.githubusercontent.com/62649759/198720590-e019a074-7411-4404-8878-3df772c4426d.png)
 
-![Screenshot (293)](https://user-images.githubusercontent.com/62649759/198702634-0fdb8252-20ce-4c4f-8e8e-e45ff45cab88.png)
+![Screenshot_16](https://user-images.githubusercontent.com/62649759/198720594-7bb3a19a-22a3-40f3-9115-5828f4f59e0f.png)
 
-![Screenshot (294)](https://user-images.githubusercontent.com/62649759/198702673-3c5feb15-5272-44ec-93f1-c57a65d7afb6.png)
+![Screenshot_17](https://user-images.githubusercontent.com/62649759/198720596-036f4972-b431-4687-8e7c-31a49d363342.png)
