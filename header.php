@@ -9,3 +9,16 @@
     <link rel="stylesheet" href="asset/css/style.css">
 </head>
 <body>
+
+<?php
+// Database
+require 'db.php';
+
+// select query
+$crud = "SELECT * FROM crud WHERE status=0";
+$home_result = mysqli_query($db_connect, $crud);
+
+// Soft delete data count
+$soft_delete = "SELECT * FROM crud WHERE status=1";
+$soft_delete_total = mysqli_query($db_connect, $soft_delete);
+?>

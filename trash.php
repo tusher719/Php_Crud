@@ -9,6 +9,8 @@ require 'db.php';
 $select_trash = "SELECT * FROM crud WHERE status=1";
 $select_result_trash = mysqli_query($db_connect, $select_trash);
 
+
+
 ?>
     <div class="container">
         <div class="row">
@@ -20,10 +22,34 @@ $select_result_trash = mysqli_query($db_connect, $select_trash);
                         <!-- Navbar Start -->
                         <div class="nav">
                             <ul>
-                                <li><a href="index.php">Home</a></li>
+                                <li><a href="index.php" class="position-relative">Home
+                                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                        <?php
+                                        if ($data_total = mysqli_num_rows($home_result)){
+                                            echo $data_total;
+                                        } else{
+                                            echo '0';
+                                        }
+                                        ?>
+                                    <span class="visually-hidden">unread messages</span>
+                                    </span>
+                                    </a></li>
                                 <li><a href="add.php">Add</a></li>
                                 <li><a href="#">Update</a></li>
-                                <li><a href="trash.php" class="active">Delete</a></li>
+                                <li>
+                                    <a href="trash.php" class="active position-relative">Delete
+                                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                            <?php
+                                            if ($data_total = mysqli_num_rows($soft_delete_total)){
+                                                echo $data_total;
+                                            } else{
+                                                echo '0';
+                                            }
+                                            ?>
+                                            <span class="visually-hidden">unread messages</span>
+                                        </span>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                         <!-- Navbar End -->
@@ -61,7 +87,13 @@ $select_result_trash = mysqli_query($db_connect, $select_trash);
                                     <!--                                    <td>--><?php //echo $crud['gender'] ?><!--</td>-->
                                     <td><?php echo ($crud['gender'] == 1 ? 'Male' : 'Female') ?></td>
                                     <td><?php echo $crud['dob'] ?></td>
-                                    <td><?php echo $crud['created_at'] ?></td>
+                                    <td>
+                                        <?php
+                                        $create = $crud['created_at'];
+                                        $createDate = date('d M, Y', strtotime($create));
+                                        $createTime = date('h:i A', strtotime($create));
+                                        echo $createDate . '<br>' . $createTime; ?>
+                                    </td>
                                     <td>
                                         <a href="soft_delete.php?id=<?= $crud['id'] ?>" class="view btn btn-primary">
                                             <i class="far fa-eye"></i>

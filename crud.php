@@ -8,6 +8,7 @@
     // select query
     $crud = "SELECT * FROM crud WHERE status=0";
     $crud_result = mysqli_query($db_connect, $crud);
+
 ?>
 <div class="container">
     <div class="row">
@@ -19,10 +20,34 @@
                     <!-- Navbar Start -->
                     <div class="nav">
                         <ul>
-                            <li><a href="index.php" class="active">Home</a></li>
+
+
+                            <li><a href="index.php" class="active">Home
+                                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                        <?php
+                                        if ($data_total = mysqli_num_rows($home_result)){
+                                            echo $data_total;
+                                        } else{
+                                            echo '0';
+                                        }
+                                        ?>
+                                    <span class="visually-hidden">unread messages</span>
+                                    </span>
+                                </a></li>
                             <li><a href="add.php">Add</a></li>
                             <li><a href="#">Update</a></li>
-                            <li><a href="trash.php">Delete</a></li>
+                            <li><a href="trash.php" class="position-relative">Delete
+                                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                        <?php
+                                        if ($data_total = mysqli_num_rows($soft_delete_total)){
+                                            echo $data_total;
+                                        } else{
+                                            echo '0';
+                                        }
+                                        ?>
+                                    <span class="visually-hidden">unread messages</span>
+                                    </span>
+                                </a></li>
                         </ul>
                     </div>
                     <!-- Navbar End -->
@@ -38,9 +63,9 @@
                     <h6>
                         <?php
                             if($db_connect){
-                                echo 'Database Connected';
+                                echo '<p class="text-success">Database Connected</p>';
                             } else {
-                                echo 'Database Error 404';
+                                echo '<p class="text-danger">Database Error 404</p>';
                             }
                         ?>
                     </h6>
@@ -66,10 +91,20 @@
                                     <td><?php echo $crud['name'] ?></td>
                                     <td><?php echo $crud['email'] ?></td>
                                     <td><?php echo $crud['phone'] ?></td>
-<!--                                    <td>--><?php //echo $crud['gender'] ?><!--</td>-->
                                     <td><?php echo ($crud['gender'] == 1 ? 'Male' : 'Female') ?></td>
-                                    <td><?php echo $crud['dob'] ?></td>
-                                    <td><?php echo $crud['created_at'] ?></td>
+                                    <td>
+                                        <?php
+                                        $birthday = $crud['dob'];
+                                        $birthDate = date('jS M, Y', strtotime($birthday));
+                                        echo $birthDate; ?>
+                                    </td>
+                                    <td>
+                                        <?php
+                                        $create = $crud['created_at'];
+                                        $createDate = date('d M, Y', strtotime($create));
+                                        $createTime = date('h:i A', strtotime($create));
+                                        echo $createDate . '<br>' . $createTime; ?>
+                                    </td>
                                     <td>
                                         <a href="edit_view.php?id=<?= $crud['id'] ?>" class="view btn btn-primary">
                                             <i class="far fa-eye"></i>
@@ -92,5 +127,7 @@
         </div>
     </div>
 </div>
+
+
 
 <?php include 'footer.php'?>

@@ -3,7 +3,8 @@
     padding: 0;
 }
 .nav{
-    background-color: grey;
+    background-color: #000;
+    border-radius: 3px;
 }
 .nav ul{
     display: flex;
@@ -26,7 +27,7 @@
 
 thead tr{
     color: #f5f5f5;
-    background: black;
+    background: #000;
     text-align: center;
 }
 .active{
@@ -40,7 +41,7 @@ thead tr{
     width: 100%;
     left: 0;
     bottom: 0;
-    background-color: sandybrown;
+    background-color: #fff;
 }
 .view{
     font-size: 10px;

@@ -21,10 +21,32 @@ $after_assoc = mysqli_fetch_assoc($select_result_crud);
                         <!-- Navbar Start -->
                         <div class="nav">
                             <ul>
-                                <li><a href="index.php">Home</a></li>
+                                <li><a href="index.php" class="position-relative">Home
+                                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                            <?php
+                                            if ($data_total = mysqli_num_rows($home_result)){
+                                                echo $data_total;
+                                            } else{
+                                                echo '0';
+                                            }
+                                            ?>
+                                            <span class="visually-hidden">unread messages</span>
+                                        </span>
+                                    </a></li>
                                 <li><a href="add.php">Add</a></li>
                                 <li><a href="#" class="active">Update</a></li>
-                                <li><a href="trash.php">Delete</a></li>
+                                <li><a href="trash.php" class="position-relative">Delete
+                                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                            <?php
+                                            if ($data_total = mysqli_num_rows($soft_delete_total)){
+                                                echo $data_total;
+                                            } else{
+                                                echo '0';
+                                            }
+                                            ?>
+                                            <span class="visually-hidden">unread messages</span>
+                                        </span>
+                                    </a></li>
                             </ul>
                         </div>
                         <!-- Navbar End -->
